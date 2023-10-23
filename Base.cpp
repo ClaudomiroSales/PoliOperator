@@ -6,7 +6,10 @@ Base::Base( int attribute )
   
 }
 
-ostream& operator<<(ostream& os, const Base& obj) {
-    os << "Attribute in Base class: " << obj.attribute;
-    return os;
+void Base::display() const 
+{ 
+    cout << "Attribute in Base class: " << attribute;
+    cout << '\n';
 }
+
+

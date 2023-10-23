@@ -9,9 +9,9 @@ using std::cout;
 int main() {
 
   Derived derivedObj(42);
-  derivedObj.display();
-  cout << "\n\n";
-  //cout <<  derivedObj;
+  derivedObj.attack();
+  //cout << "\n\n";
+  cout <<  derivedObj;
 
 
   cout << "Hello World!\n";
