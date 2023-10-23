@@ -1,8 +1,10 @@
 #include "Base.h"
 
 class Derived : public Base {
-public:
-    Derived(int = 0);
+  friend ostream &operator<<(ostream &, const Derived &);
 
-    void display() override;
+public:
+  Derived(int = 0);
+
+  void display() override;
 };
