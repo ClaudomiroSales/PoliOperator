@@ -28,7 +28,7 @@ void processItem(Item* item) {
         // Handle a Potion
         potion->use();
     } else {
-        std::cout << "Unknown item type" << std::endl;
+        cout << "Unknown item type" << std::endl;
     }
 }
 
