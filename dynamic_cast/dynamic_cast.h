@@ -9,14 +9,14 @@ public:
 class Weapon : public Item {
 public:
     void use() override {
-        cout << "Using a weapon" << std::endl;
+        cout << "Using a weapon" << '\n';
     }
 };
 
 class Potion : public Item {
 public:
     void use() override {
-        cout << "Using a potion" << std::endl;
+        cout << "Using a potion" << '\n';
     }
 };
 
@@ -28,7 +28,7 @@ void processItem(Item* item) {
         // Handle a Potion
         potion->use();
     } else {
-        cout << "Unknown item type" << std::endl;
+        cout << "Unknown item type" << '\n';
     }
 }
 
